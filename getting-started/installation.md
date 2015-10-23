@@ -53,6 +53,13 @@ This install command will perform the following actions:
 - Publishing assets
 - Create a first admin account
 
+### Troubleshooting
+
+ - My page stays blank (500)
+This could be because the cms does not have permissions to write to the storage, cache and assets. The following command fixes this.
+```
+sudo chmod 777 -R storage/ public/assets/ bootstrap/cache/
+```
 
 ### Enjoy
 
